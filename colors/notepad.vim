@@ -2,7 +2,7 @@
 " Author:      wolandark (contact-woland@proton.me)
 " Webpage:     http://wolandark.github.io
 " Description: A light Colorscheme for Vim
-" Last Change: 2024-03-11
+" Last Change: 2024-03-12
 
 hi clear
 
@@ -27,12 +27,12 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=NONE ctermfg=57 cterm=NONE guibg=NONE guifg=#5917ff gui=NONE
     hi Type ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#de007e gui=NONE
     hi Underlined ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#333333 gui=NONE
-    hi StatusLine ctermbg=0 ctermfg=39 cterm=NONE guibg=#000000 guifg=#00bbff gui=NONE
-    hi StatusLineNC ctermbg=0 ctermfg=39 cterm=NONE guibg=#000000 guifg=#00bbff gui=NONE
+    hi StatusLine ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
+    hi StatusLineNC ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
     hi VertSplit ctermbg=NONE ctermfg=26 cterm=NONE guibg=NONE guifg=#005dc5 gui=NONE
-    hi TabLine ctermbg=NONE ctermfg=39 cterm=NONE guibg=NONE guifg=#00bbff gui=NONE
-    hi TabLineFill ctermbg=NONE ctermfg=32 cterm=NONE guibg=NONE guifg=#007ccc gui=NONE
-    hi TabLineSel ctermbg=NONE ctermfg=39 cterm=NONE guibg=NONE guifg=#00bbff gui=NONE
+    hi TabLine ctermbg=186 ctermfg=0 cterm=NONE guibg=#cfd39b guifg=#000000 gui=NONE
+    hi TabLineFill ctermbg=186 ctermfg=0 cterm=NONE guibg=#cfd39b guifg=#000000 gui=NONE
+    hi TabLineSel ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
     hi Title ctermbg=NONE ctermfg=55 cterm=NONE guibg=NONE guifg=#3100af gui=NONE
     hi CursorLine ctermbg=186 ctermfg=NONE cterm=NONE guibg=#cfd39b guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#333333 gui=NONE
@@ -94,12 +94,12 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Todo ctermbg=NONE ctermfg=color13 cterm=NONE
     hi Type ctermbg=NONE ctermfg=color14 cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=color15 cterm=NONE
-    hi StatusLine ctermbg=color16 ctermfg=color7 cterm=NONE
-    hi StatusLineNC ctermbg=color16 ctermfg=color7 cterm=NONE
+    hi StatusLine ctermbg=color15 ctermfg=color1 cterm=NONE
+    hi StatusLineNC ctermbg=color15 ctermfg=color1 cterm=NONE
     hi VertSplit ctermbg=NONE ctermfg=color4 cterm=NONE
-    hi TabLine ctermbg=NONE ctermfg=color7 cterm=NONE
-    hi TabLineFill ctermbg=NONE ctermfg=color6 cterm=NONE
-    hi TabLineSel ctermbg=NONE ctermfg=color7 cterm=NONE
+    hi TabLine ctermbg=color16 ctermfg=color16 cterm=NONE
+    hi TabLineFill ctermbg=color16 ctermfg=color16 cterm=NONE
+    hi TabLineSel ctermbg=color15 ctermfg=color1 cterm=NONE
     hi Title ctermbg=NONE ctermfg=color8 cterm=NONE
     hi CursorLine ctermbg=color16 ctermfg=NONE cterm=NONE
     hi LineNr ctermbg=NONE ctermfg=color15 cterm=NONE
