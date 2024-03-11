@@ -1,8 +1,8 @@
-" ColorschemeFromHell.vim -- Vim color scheme.
+" NotePad.vim -- Vim color scheme.
 " Author:      wolandark (contact-woland@proton.me)
 " Webpage:     http://wolandark.github.io
-" Description: A Hellish color4 Colorscheme
-" Last Change: 2024-03-10
+" Description: A light Colorscheme for Vim
+" Last Change: 2024-03-11
 
 hi clear
 
@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "colorschemefromhell"
+let colors_name = "notepad"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermbg=229 ctermfg=18 cterm=NONE guibg=#fbffbb guifg=#001996 gui=NONE
@@ -34,9 +34,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineFill ctermbg=NONE ctermfg=32 cterm=NONE guibg=NONE guifg=#007ccc gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=39 cterm=NONE guibg=NONE guifg=#00bbff gui=NONE
     hi Title ctermbg=NONE ctermfg=55 cterm=NONE guibg=NONE guifg=#3100af gui=NONE
-    hi CursorLine ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
+    hi CursorLine ctermbg=186 ctermfg=NONE cterm=NONE guibg=#cfd39b guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#333333 gui=NONE
-    hi CursorLineNr ctermbg=NONE ctermfg=229 cterm=NONE guibg=NONE guifg=#fbffbb gui=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=197 cterm=NONE guibg=NONE guifg=#ff095f gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=160 cterm=NONE guibg=NONE guifg=#d60000 gui=NONE
     hi Visual ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
@@ -62,14 +62,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellCap ctermbg=NONE ctermfg=18 cterm=NONE guibg=NONE guifg=#001996 gui=NONE
     hi SpellLocal ctermbg=NONE ctermfg=26 cterm=NONE guibg=NONE guifg=#005dc5 gui=NONE
     hi SpellRare ctermbg=NONE ctermfg=70 cterm=NONE guibg=NONE guifg=#3ea127 gui=NONE
-    hi ColorColumn ctermbg=0 ctermfg=12 cterm=NONE guibg=#000000 guifg=#000fff gui=NONE
+    hi ColorColumn ctermbg=186 ctermfg=162 cterm=NONE guibg=#cfd39b guifg=#de007e gui=NONE
     hi SignColumn ctermbg=229 ctermfg=56 cterm=NONE guibg=#fbffbb guifg=#4100e8 gui=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#333333 gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=56 cterm=NONE guibg=NONE guifg=#4100e8 gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=27 cterm=NONE guibg=NONE guifg=#004ff3 gui=NONE
     hi Question ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#000fff gui=NONE
-    hi Cursor ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi CursorColumn ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
+    hi Cursor ctermbg=236 ctermfg=229 cterm=NONE guibg=#333333 guifg=#fbffbb gui=NONE
+    hi CursorColumn ctermbg=186 ctermfg=NONE cterm=NONE guibg=#cfd39b guifg=NONE gui=NONE
     hi QuickFixLine ctermbg=229 ctermfg=57 cterm=NONE guibg=#fbffbb guifg=#5917ff gui=NONE
     hi Conceal ctermbg=NONE ctermfg=162 cterm=NONE guibg=NONE guifg=#de007e gui=NONE
     hi ToolbarLine ctermbg=229 ctermfg=236 cterm=NONE guibg=#fbffbb guifg=#333333 gui=NONE
@@ -101,9 +101,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineFill ctermbg=NONE ctermfg=color6 cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=color7 cterm=NONE
     hi Title ctermbg=NONE ctermfg=color8 cterm=NONE
-    hi CursorLine ctermbg=color15 ctermfg=color1 cterm=NONE
+    hi CursorLine ctermbg=color16 ctermfg=NONE cterm=NONE
     hi LineNr ctermbg=NONE ctermfg=color15 cterm=NONE
-    hi CursorLineNr ctermbg=NONE ctermfg=color1 cterm=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=NONE cterm=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=color11 cterm=NONE
     hi helpNormal ctermbg=NONE ctermfg=color12 cterm=NONE
     hi Visual ctermbg=color15 ctermfg=color1 cterm=NONE
@@ -129,14 +129,14 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellCap ctermbg=NONE ctermfg=color2 cterm=NONE
     hi SpellLocal ctermbg=NONE ctermfg=color4 cterm=NONE
     hi SpellRare ctermbg=NONE ctermfg=color5 cterm=NONE
-    hi ColorColumn ctermbg=color16 ctermfg=color10 cterm=NONE
+    hi ColorColumn ctermbg=color16 ctermfg=color14 cterm=NONE
     hi SignColumn ctermbg=color1 ctermfg=color9 cterm=NONE
     hi ErrorMsg ctermbg=NONE ctermfg=color15 cterm=NONE
     hi ModeMsg ctermbg=NONE ctermfg=color9 cterm=NONE
     hi MoreMsg ctermbg=NONE ctermfg=color3 cterm=NONE
     hi Question ctermbg=NONE ctermfg=color10 cterm=NONE
-    hi Cursor ctermbg=NONE ctermfg=color16 cterm=NONE
-    hi CursorColumn ctermbg=color15 ctermfg=color1 cterm=NONE
+    hi Cursor ctermbg=color15 ctermfg=color1 cterm=NONE
+    hi CursorColumn ctermbg=color16 ctermfg=NONE cterm=NONE
     hi QuickFixLine ctermbg=color1 ctermfg=color13 cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=color14 cterm=NONE
     hi ToolbarLine ctermbg=color1 ctermfg=color15 cterm=NONE
